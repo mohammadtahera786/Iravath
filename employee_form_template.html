@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Contact Form Template</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #333;
+            --border-color: #e0e0e0;
+            --text-color: #2c3e50;
+            --header-bg: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .form-container { box-shadow: none; border-radius: 0; padding: 30px; }
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+        }
+
+        .company-info {
+            flex-grow: 1;
+        }
+
+        .company-logo {
+            font-size: 32px;
+            font-weight: 800;
+            color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .company-logo span {
+            color: #666;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .company-tagline {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #7f8c8d;
+        }
+
+        .form-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 15px;
+            color: var(--primary-color);
+        }
+
+        .photo-box {
+            width: 100px;
+            height: 120px;
+            border: 1px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #999;
+            background: #fafafa;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        .section-header {
+            background: var(--header-bg);
+            padding: 8px 15px;
+            font-weight: 700;
+            font-size: 16px;
+            border-left: 4px solid var(--primary-color);
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .field-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .field-group.full-width {
+            grid-column: span 2;
+        }
+
+        label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .input-line {
+            border-bottom: 1px solid var(--border-color);
+            height: 30px;
+            width: 100%;
+        }
+
+        .bank-details .form-grid {
+            grid-template-columns: 1.5fr 1fr;
+        }
+
+        .footer {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .signature-area {
+            text-align: center;
+            width: 200px;
+        }
+
+        .date-area {
+            text-align: right;
+            width: 150px;
+        }
+
+        .sig-line {
+            border-top: 1px solid #333;
+            margin-top: 40px;
+            padding-top: 8px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <header>
+        <div class="company-info">
+            <div class="company-logo">
+                BK <span>Buildexindia Pvt Ltd</span>
+            </div>
+            <div class="company-tagline">BUILD | RENOVATE | REPAIR</div>
+            <div class="form-title">Employee Contact Form</div>
+        </div>
+        <div class="photo-box">Photo</div>
+    </header>
+
+    <section class="employee-info">
+        <div class="section-header">Employee Information</div>
+        <div class="form-grid">
+            <div class="field-group">
+                <label>Full Name</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Email ID</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Gender</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Date of Birth</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Marital Status</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Religion</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Referred Through</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Qualification</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Job Title</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Phone Number</label>
+                <div class="input-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="emergency-contact">
+        <div class="section-header">Primary Emergency Contact</div>
+        <div class="form-grid">
+            <div class="field-group">
+                <label>Full Name</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Relationship</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Phone Number</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Alternative Number</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group full-width">
+                <label>Permanent Address</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group full-width">
+                <label>Current Address</label>
+                <div class="input-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bank-details">
+        <div class="section-header">Bank Details</div>
+        <div class="form-grid">
+            <div class="field-group">
+                <label>Account Name</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Bank Name & IFSC Code</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Account Number</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>PAN Number</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="field-group">
+                <label>Aadhar Number</label>
+                <div class="input-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="signature-area">
+            <div class="sig-line">Employee Signature</div>
+        </div>
+        <div class="date-area">
+            <label>Date</label>
+            <div class="input-line"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
